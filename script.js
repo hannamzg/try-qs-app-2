@@ -22,10 +22,18 @@ function  addToYourAnsers() {
     /* let imgee = document.createElement("img") */
     imgee = URL.createObjectURL(AddImage.files[0]);
     
-    qs.push(new addQS([TheAnsers[0].value,TheAnsers[1].value,TheAnsers[2].value,TheAnsers[3].value],corectAnser.value,addTheQss.value,imgee));    
+    qs.push(new addQS([TheAnsers[0].value,TheAnsers[1].value,TheAnsers[2].value,TheAnsers[3].value],corectAnser.value,addTheQss.value,imgee));  
+    for(let i=0; i<TheAnsers.length;i++){
+        TheAnsers[i].value=""
+    }  
+    corectAnser.value = "";
+    addTheQss.value = "";
+    
 }
 addQss.addEventListener("click" , ()=>{
-    addToYourAnsers()
+    addToYourAnsers();
+    addValueTooBun();
+    initialize();
 })
 
 let opshin = document.getElementsByClassName('opshin');

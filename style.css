@@ -10,6 +10,7 @@ body{
     height: 100vh;
     justify-content: center;
     flex-wrap: wrap;
+    margin:  0 auto;
 }
 
 .opshin{
@@ -19,7 +20,7 @@ body{
     background: linear-gradient(#48cae4,#9d4edd,#455e89) ;
     color: white;
     font-size: 25px;
-    margin: 10px;
+    margin: 0 auto;
     
 }
 
@@ -46,12 +47,34 @@ body{
 }
 
 #img{
-    width: 30vw;
-    max-height: 30vh;
+    width: 300px;
+    max-height: 300px;
     margin-block: 40px;
+    margin: 0 auto;
 }
 
 #h1{
     text-align: center;
     margin-block: 20px;
+}
+
+
+@media  screen and (max-width:500px){
+    .opshin{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: linear-gradient(#48cae4,#9d4edd,#455e89) ;
+        color: white;
+        font-size: 25px;
+        margin: 0 auto;
+        
+    }
+    #img{
+        width: 200px;
+        max-height: 200px;
+        max-width: 70vw;
+        margin-block: 40px;
+        margin: 0 auto;
+    }
 }
